@@ -47,11 +47,11 @@ public class PlayerMovement : MonoBehaviour {
             //crouch
         }
     }
-    void OnCollisionEnter(Collision2D other){
+    void OnCollisionEnter2D(Collision2D other){
 
-        Debug.Log("......");
+        //Debug.Log("......");
 
-        if(other.gameObject.tag == "Terrain")
+        if(other.gameObject.tag == "Ground")
             isGrounded = true;
     }
 
