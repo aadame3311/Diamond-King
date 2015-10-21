@@ -18,10 +18,6 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	// Update is called once per frame
-	void Update () {
-        
-        Movement();
-	}
 
     void Movement()
     {
@@ -46,13 +42,18 @@ public class PlayerMovement : MonoBehaviour {
         {
             //crouch
         }
+       
     }
-    void OnCollisionEnter(Collision2D other){
+    void Update()
+    {
+        Movement();   
+    }
+    void OnCollisionEnter2D(Collision2D other){
 
-        Debug.Log("......");
+        //sDebug.Log("......");
 
         if(other.gameObject.tag == "Terrain")
             isGrounded = true;
     }
-
+  
 }
