@@ -13,10 +13,6 @@ public class EnemyAttack : MonoBehaviour {
     bool playerInRange;
     float timer;
 
-    public Transform target;
-    public float dist;
-    public int speed;
-
 	// Use this for initialization
 	void Awake () {
 
@@ -25,6 +21,22 @@ public class EnemyAttack : MonoBehaviour {
         enemyHealth = GetComponent<EnemyHealth>();
         //anim = GetComponent<Animator>();
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject == player)
+        {
+            playerInRange = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject == player)
+        {
+            playerInRange = false;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,16 +46,21 @@ public class EnemyAttack : MonoBehaviour {
         if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
         {
             Attack();
-        }
+        }        
 
-        
+        if(playerHealth.currentHealth <=0)
+        {
+            //anim.SetTrigger("PlayerDead");
+        }
 	}
 
     void Attack()
     {
-        if (Vector2.Distance(transform.position, target.position) > dist)
+        timer = 0f;
+
+        if(playerHealth.currentHealth > 0)
         {
-            transform.Translate(new Vector2(speed * Time.deltaTime, 0));
+            playerHealth.TakeDamage(attackDamage);
         }
     }
 

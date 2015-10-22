@@ -3,39 +3,42 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour {
 
-    GameObject Player;
-    EnemyAttack attack;
+    PlayerHealth playerHealth;
+    EnemyHealth enemyHealth;
     public int speed;
     public float dist;
 
-    public Transform target;
+    Transform player;
     Transform enemy;
 
     void Start()
     {
         enemy = this.GetComponent<Transform>();
-        target = GameObject.FindWithTag("Player").transform;
+        player = GameObject.FindWithTag("Player").transform;
     }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
         
         AI_movement();
-	}
+    }
 
     void AI_movement() {
 
         // move to player after locating it on target.position
 
         // player is left of enemy, move left
-        if ((target.position.x+dist) <= enemy.position.x) 
+        if ((player.position.x+dist) < enemy.position.x) 
         { 
-            enemy.position -= enemy.right * speed * Time.deltaTime; 
+            enemy.position -= enemy.right * speed * Time.deltaTime;
+            enemy.eulerAngles = new Vector2(0, 0);
+
         }
         // player is right of enemy, move right
-        else if ((target.position.x-dist) >= enemy.position.x) 
+        else if ((player.position.x-dist) > enemy.position.x) 
         { 
-            enemy.position += enemy.right * speed * Time.deltaTime; 
+            enemy.position -= enemy.right * speed * Time.deltaTime;
+            enemy.eulerAngles = new Vector2(0, 180);
         }
     }
 }
