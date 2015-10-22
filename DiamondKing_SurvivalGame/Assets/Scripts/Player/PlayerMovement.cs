@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.AddForce(Vector2.up * speed * 40);
+            rb.AddForce(Vector2.up * speed * 60);
             isGrounded = false;
         }
         if (Input.GetKeyDown(KeyCode.S))
