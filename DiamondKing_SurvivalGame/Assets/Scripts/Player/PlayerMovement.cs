@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void Movement()
     {
-        anim.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+        anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
 
         if(Input.GetAxisRaw("Horizontal") > 0) // right
         {
