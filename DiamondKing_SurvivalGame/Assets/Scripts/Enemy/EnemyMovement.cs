@@ -5,6 +5,7 @@ public class EnemyMovement : MonoBehaviour {
 
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
+    Animator anim;
     public int speed;
     public float dist;
 
@@ -13,6 +14,7 @@ public class EnemyMovement : MonoBehaviour {
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         enemy = this.GetComponent<Transform>();
         player = GameObject.FindWithTag("Player").transform;
     }
@@ -25,8 +27,8 @@ public class EnemyMovement : MonoBehaviour {
 
     void AI_movement() {
 
+        anim.SetFloat("Move", Mathf.Abs(Input.GetAxis("Horizontal")));
         // move to player after locating it on target.position
-
         // player is left of enemy, move left
         if ((player.position.x+dist) < enemy.position.x) 
         { 

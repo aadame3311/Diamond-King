@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 106986fca0ca7d548b020f3f5c7476cd
-timeCreated: 1445376220
+timeCreated: 1445547972
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -24,6 +24,7 @@ TextureImporter:
     21300034: AnimationRight_17
     21300036: AnimationRight_18
     21300038: AnimationRight_19
+    21300040: AnimationRight_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -78,47 +79,47 @@ TextureImporter:
         width: 34
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_1
       rect:
         serializedVersion: 2
         x: 101
-        y: 615
+        y: 614
         width: 41
         height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_2
       rect:
         serializedVersion: 2
         x: 166
-        y: 616
+        y: 614
         width: 46
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_3
       rect:
         serializedVersion: 2
         x: 235
-        y: 616
+        y: 614
         width: 47
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_4
       rect:
         serializedVersion: 2
         x: 311
-        y: 616
+        y: 614
         width: 38
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_5
       rect:
@@ -128,7 +129,7 @@ TextureImporter:
         width: 41
         height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_6
       rect:
@@ -138,7 +139,7 @@ TextureImporter:
         width: 46
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_7
       rect:
@@ -148,7 +149,7 @@ TextureImporter:
         width: 39
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_8
       rect:
@@ -158,7 +159,7 @@ TextureImporter:
         width: 47
         height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_9
       rect:
@@ -168,7 +169,7 @@ TextureImporter:
         width: 39
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_10
       rect:
@@ -178,19 +179,9 @@ TextureImporter:
         width: 46
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_11
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 445
-        width: 38
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: AnimationRight_12
       rect:
         serializedVersion: 2
         x: 23
@@ -198,9 +189,9 @@ TextureImporter:
         width: 47
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: AnimationRight_13
+    - name: AnimationRight_12
       rect:
         serializedVersion: 2
         x: 110
@@ -208,9 +199,9 @@ TextureImporter:
         width: 41
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: AnimationRight_14
+    - name: AnimationRight_13
       rect:
         serializedVersion: 2
         x: 197
@@ -218,7 +209,17 @@ TextureImporter:
         width: 52
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationRight_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 193
+        width: 80
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_15
       rect:
@@ -228,7 +229,7 @@ TextureImporter:
         width: 47
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_16
       rect:
@@ -238,7 +239,7 @@ TextureImporter:
         width: 42
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_17
       rect:
@@ -248,7 +249,7 @@ TextureImporter:
         width: 38
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_18
       rect:
@@ -258,7 +259,7 @@ TextureImporter:
         width: 57
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AnimationRight_19
       rect:
@@ -268,7 +269,17 @@ TextureImporter:
         width: 66
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationRight_20
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 445
+        width: 38
+        height: 131
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
